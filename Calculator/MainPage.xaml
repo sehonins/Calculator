@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+
+    <StackLayout BackgroundColor="Black">
+
+        
+            <Label x:Name="lastDigit" Text="0" HorizontalTextAlignment="End" TextColor="Gray" FontSize="36"/>
+            <Label x:Name="currentDigit" Text="0" HorizontalTextAlignment="End" TextColor="White" FontSize="56"/>
+        
+        <Grid VerticalOptions="EndAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="sevenBtn"  Grid.Column="0"   Grid.Row="0" Text="7" FontSize="Large" Clicked="sevenBtn_Clicked" ></Button>
+            <Button x:Name="eightBtn" Grid.Column="1"  Grid.Row="0" Text="8" FontSize="Large" Clicked="eightBtn_Clicked"></Button>
+            <Button x:Name="nineBtn" Grid.Column="2"  Grid.Row="0" Text="9" FontSize="Large" Clicked="nineBtn_Clicked"></Button>
+            <Button x:Name="divideBtn" Grid.Column="3"  Grid.Row="0" Text="/" FontSize="Large" Clicked="divideBtn_Clicked" ></Button>
+            <Button x:Name="fourBtn" Grid.Column="0"  Grid.Row="1" Text="4" FontSize="Large" Clicked="fourBtn_Clicked" ></Button>
+            <Button x:Name="fiveBtn" Grid.Column="1"  Grid.Row="1" Text="5" FontSize="Large" Clicked="fiveBtn_Clicked"></Button>
+            <Button x:Name="sixBtn" Grid.Column="2"  Grid.Row="1" Text="6" FontSize="Large" Clicked="sixBtn_Clicked"></Button>
+            <Button x:Name="byBtn" Grid.Column="3"  Grid.Row="1" Text="*" FontSize="Large" Clicked="byBtn_Clicked"></Button>
+            <Button x:Name="oneBtn" Grid.Column="0"  Grid.Row="2" Text="1" FontSize="Large" Clicked="oneBtn_Clicked"></Button>
+            <Button x:Name="twoBtn" Grid.Column="1"  Grid.Row="2" Text="2" FontSize="Large" Clicked="twoBtn_Clicked"></Button>
+            <Button x:Name="threeBtn" Grid.Column="2"  Grid.Row="2" Text="3" FontSize="Large" Clicked="threeBtn_Clicked"></Button>
+            <Button x:Name="minusBtn" Grid.Column="3"  Grid.Row="2" Text="-" FontSize="Large" Clicked="minusBtn_Clicked"></Button>
+            <Button x:Name="clearBtn" Grid.Column="0"  Grid.Row="3" Text="C" FontSize="Large" Clicked="clearBtn_Clicked"></Button>
+            <Button x:Name="zeroBtn" Grid.Column="1"  Grid.Row="3" Text="0" FontSize="Large" Clicked="zeroBtn_Clicked"></Button>
+            <Button x:Name="dotBtn" Grid.Column="2"  Grid.Row="3" Text="." FontSize="Large" Clicked="dotBtn_Clicked"></Button>
+            <Button x:Name="plusBtn" Grid.Column="3"  Grid.Row="3" Text="+" FontSize="Large" Clicked="plusBtn_Clicked" ></Button>
+            <Button x:Name="resultBtn" Grid.ColumnSpan="4" Margin="10,10"  Grid.Row="4" Text="=" FontSize="Large" Clicked="resultBtn_Clicked"></Button>
+            
+        </Grid>
+        <Label Text="Made by Sergejs Sehonins" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="12"/>
+    </StackLayout>
+
+</ContentPage>
